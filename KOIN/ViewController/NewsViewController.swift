@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import PureLayout
 
 class NewsViewController: UIViewController {
+    
+    // Choose Country for the first time
+    var countryTableView: UITableView?
+    // News Scroll View
+    var newsScrollView: UIScrollView?
+    var newsPageControl: UIPageControl?
+    var contentWidth: CGFloat = 0.0
+    // Side Menu
+    var sideMenuView: UIView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initializeNewsScrollView()
+        initializeSideMenu()
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,20 +8,23 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UIGestureRecognizerDelegate {
-
+class LoginViewController: UIViewController {
+    
+    var loginFormView: UIView?
+    var forgetPasswordView: UIView?
+    var usernameTF: UITextField?
+    var passwordTF: UITextField?
+    var forgetPasswordLabel: UILabel?
+    var forgetPasswordTF: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Login"
         self.navigationController?.isNavigationBarHidden = true
         initializeView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    func initializeView() {
-        self.view.addSubview(createLoginImage())
-        self.view.addSubview(createLoginButton())
     }
 }

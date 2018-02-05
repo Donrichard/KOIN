@@ -17,3 +17,5 @@ struct ScreenSize {
 struct ImageName {
     static let logoName = "icon"
 }
+
+let width = UIScreen.main.bounds.width

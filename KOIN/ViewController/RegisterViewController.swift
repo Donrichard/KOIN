@@ -9,7 +9,11 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    var usernameTF: UITextField?
+    var emailTF: UITextField?
+    var passwordTF: UITextField?
+    var confirmPasswordTF: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
